@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Laws Search App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">BC Laws Search Tool</h1>
+        <form id="searchForm" class="d-flex justify-content-center mb-4">
+            <input type="text" id="searchQuery" class="form-control w-50 me-2 mr-2" placeholder="Enter topic or jurisdiction" required>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div id="results" class="list-group"></div>
+        <nav aria-label="Page navigation">
+            <ul id="pagination" class="pagination justify-content-center mt-4"></ul>
+        </nav>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>    
+</body>
+</html>
