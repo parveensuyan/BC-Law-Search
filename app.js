@@ -111,6 +111,13 @@ function changePage(page) {
 
 
 async function summarizeDocument(documentId) {
+    const openApiKey = prompt("Please enter your OpenAI API key:");
+    
+    // If no key is provided, exit the function
+    if (!openApiKey) {
+        alert("Summarization cannot proceed without an OpenAI API key. Please provide a valid key to continue.");
+        return;
+    }
      try {
         // Fetch document content from BC Laws
         const documentUrl = `https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/${documentId}/xml`;
@@ -137,7 +144,7 @@ async function summarizeDocument(documentId) {
         }, {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer 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` 
+                'Authorization': `Bearer ${openApiKey}` 
             }
         });
         alert(`Summary successfully retrieved: ${summary}`);
