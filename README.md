@@ -33,7 +33,8 @@ o	Test the app across major browsers (Chrome, Firefox, Safari, Edge) to ensure c
 2.	**Hosting**: Migrate the app to cloud platforms such as AWS (using S3), Azure (using Azure Static Web Apps), or Google Cloud (using Firebase Hosting).
 3.	**Backend Integration**: If required in production, add a lightweight backend (using AWS Lambda or Azure Functions) to handle server-side API interactions and provide better security (e.g., hiding API keys).
 4.	**CI/CD Setup**: Integrate GitHub Actions to automate the deployment to cloud services on every push to the repository.
-- What the deployment pipeline will look like [max 200 words]
+
+**What the deployment pipeline will look like** 
 1.	**Source Control**: All code is stored in a GitHub repository.
 2.	**Continuous Integration**: GitHub Actions run tests on each commit, ensuring no breaking changes.
 3.	**Build Process**: For production, assets are minified, and files are optimized for faster loading times.
@@ -47,7 +48,7 @@ o	Test the app across major browsers (Chrome, Firefox, Safari, Edge) to ensure c
 4.	**Continuous Deployment**: Once tests pass, GitHub Actions automatically deploy the app to GitHub Pages (for PoC) or a cloud service such as AWS or Azure (for production).
 5.	**Monitoring**: Basic logging and monitoring can be added in the cloud environment to track API performance, error rates, and user interaction metrics.
 
-**And please add any software stack recommendations and feature improvements you can think of for the prod version**
+**Software stack recommendations and feature improvements you can think of for the prod version**
 1.	**Frontend**: ReactJS for scalability
 2.	**Backend**: Use Node.js with Express for handling API requests securely.
 3.	**CI/CD pipelines**: Implement CI/CD pipelines (e.g., GitHub Actions) for automated deployments
@@ -55,7 +56,7 @@ o	Test the app across major browsers (Chrome, Firefox, Safari, Edge) to ensure c
 5. **User Authentication**: Add OAuth-based user authentication for tracking users and securing access to the application.
 6.	**Enhanced UX**: Allow users to search by specific legislation categories, dates, or document types for more targeted results.
    
-**tell me how you’d like to demo the app for the working group**.
+**how you’d like to demo the app for the working group**.
 1.	**Search Functionality**: Demonstrate how users can input keywords to search for BC legislation.
 2.	**Document Retrieval**: Show how a specific document is retrieved from the BC Laws API, displaying its structured content.
 3.	**Summarization Feature**: Highlight the integration with OpenAI to summarize the retrieved document into a short paragraph.
