@@ -15,18 +15,18 @@ In case of issues facing retrive data from BC Law API make sure https://cors-any
 
 **A test plan for the app**
 1. **Functional Testing**:
-o	**Search Functionality**: Test that the search input correctly queries the BC Laws API with different keywords and retrieves relevant legislation documents.
-o	**Pagination**: Verify that pagination works as expected, allowing navigation through multiple pages of search results.
-o	**Document Retrieval**: Ensure that clicking on a document title successfully retrieves the document's content (in XML or HTML format).
-o	**Summarization**: Test that the “Summarize” button triggers a request to the OpenAI API and displays the summarized content correctly for different types of documents.
-2.	**Error Handling**:
-o	**API Errors**: Simulate network issues or API unavailability (e.g., wrong API keys or quota limits) and verify that the app displays appropriate error messages to the user without crashing.
-o	**CORS Issues**: Test if the app handles cross-origin resource sharing (CORS) issues effectively, using a proxy or alternative methods.
-o	**Empty Search Results**: Test edge cases where no results are returned for a query and ensure the app gracefully handles and informs the user.
-3.	**Performance Testing**:
-o	Verify the time taken to retrieve and summarize documents, ensuring the app does not time out.
-4.	**Cross-Browser Testing**:
-o	Test the app across major browsers (Chrome, Firefox, Safari, Edge) to ensure consistent behavior.
+    o	**Search Functionality**: Test that the search input correctly queries the BC Laws API with different keywords and retrieves relevant legislation documents.
+    o	**Pagination**: Verify that pagination works as expected, allowing navigation through multiple pages of search results.
+    o	**Document Retrieval**: Ensure that clicking on a document title successfully retrieves the document's content (in XML or HTML format).
+    o	**Summarization**: Test that the “Summarize” button triggers a request to the OpenAI API and displays the summarized content correctly for different types of documents.
+3.	**Error Handling**:
+   o	**API Errors**: Simulate network issues or API unavailability (e.g., wrong API keys or quota limits) and verify that the app displays appropriate error messages to the user without crashing.
+  	o	**CORS Issues**: Test if the app handles cross-origin resource sharing (CORS) issues effectively, using a proxy or alternative methods.
+  	o	**Empty Search Results**: Test edge cases where no results are returned for a query and ensure the app gracefully handles and informs the user.
+4.	**Performance Testing**:
+   o	Verify the time taken to retrieve and summarize documents, ensuring the app does not time out.
+5.	**Cross-Browser Testing**:
+   o	Test the app across major browsers (Chrome, Firefox, Safari, Edge) to ensure consistent behavior.
 
 **Migrate it to a major cloud services provider**
 1.	**Containerization**: Use Docker to containerize the app, ensuring it runs consistently across environments.
