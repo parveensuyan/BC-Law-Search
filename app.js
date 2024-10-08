@@ -24,7 +24,7 @@ async function search(query, page) {
     }
     catch (error) {
         console.error('Error fetching BC Laws data:', error);
-        alert('Error fetching BC Laws data.');
+        alert('Error fetching BC Laws data. Check if you need to enable CORS https://cors-anywhere.herokuapp.com/corsdemo ');
     }
 }
 
